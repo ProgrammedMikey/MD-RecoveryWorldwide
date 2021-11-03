@@ -2,7 +2,7 @@
 <%- include("./partials/header") %>
 
 <header id="header">
-    <a href="#" class="logo">Recovery World Wide</a>
+    <a href="#" class="logo"><img src = "images/logo.svg" id="logo2"/></a>
     <ul> 
         <li><a href="#" class="active">Home</a></li>
         <li><a href="#">About</a></li>
@@ -22,24 +22,45 @@
 </section>
 
 <div class="sec">
-    <h2>
-        Recovery World Wide 
-    </h2>
-    <p>
-        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
-    </p>
+    <div class="container">
+    <form action="/" method="POST">
+       <img src = "images/logo.svg" id="logo2"/> <h2>Newsletter Sign-Up </h2>
+
+        <div class="row100">
+            <div class="col">
+                <div class="inputBox">
+                    <input type="text" name="firstName" required="required" id="firstName">
+                    <span class="text">First Name</span>
+                    <span class="line"></span>
+                </div>
+            </div>
+              <div class="col">
+                <div class="inputBox">
+                    <input type="text" name="lastName" required="required" id="lastName">
+                    <span class="text">Last Name</span>
+                    <span class="line"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row100">
+            <div class="col">
+                <div class="inputBox">
+                    <input type="text" name="email" required="required" id="email">
+                    <span class="text">Email</span>
+                    <span class="line"></span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row100">
+            <div class="col">
+               <input type="submit" value="send" id="submitForm">
+            </div>
+        </div>
+    </form>
+    </div>
 </div>
 
 
-<form action="/" method="POST">
-    <input type="text" placeholder="First Name" name="firstName"><br><br>
-    
-    <input type="text" placeholder="Last Name" name="lastName"><br><br>
-
-    <label>Email: </label>
-    <input type="email" placeholder="Email" name="email"><br><br>
- 
-    <button>Submit</button>
-</form>
 <!--Opening the ejs tags for including footer file-->
 <%- include("./partials/footer") %>
