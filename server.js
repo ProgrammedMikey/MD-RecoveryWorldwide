@@ -25,13 +25,13 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static(__dirname + '/public'));
 
 
-app.use(session({
-    secret:'recoveryWW',
-    saveUninitialized: true,
-    resave: true
-}));
+// app.use(session({
+//     secret:'recoveryWW',
+//     saveUninitialized: true,
+//     resave: true
+// }));
   
-app.use(flash());
+// app.use(flash());
   
 //rendering form.ejs
 app.get("/",function(req,res){
