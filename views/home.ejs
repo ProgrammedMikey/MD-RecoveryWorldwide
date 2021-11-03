@@ -1,0 +1,26 @@
+<!--Opening the ejs tags for including header file-->
+<%- include("./partials/header") %>
+
+<header id="header">
+    <a href="#" class="logo">Recovery World Wide</a>
+    <ul> 
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Locations</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</header>
+
+
+<form action="/" method="POST">
+    <input type="text" placeholder="First Name" name="firstName"><br><br>
+    
+    <input type="text" placeholder="Last Name" name="lastName"><br><br>
+
+    <label>Email: </label>
+    <input type="email" placeholder="Email" name="email"><br><br>
+ 
+    <button>Submit</button>
+</form>
+<!--Opening the ejs tags for including footer file-->
+<%- include("./partials/footer") %>
